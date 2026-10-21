@@ -1,0 +1,15 @@
+# Install this file (`pip install -r requirements.txt`) to recreate the
+# environment the notebook runs in.
+#
+#   python3.14 -m venv ~/.venvs/machine-learning   # Python 3.14 required
+#   ~/.venvs/machine-learning/bin/pip install -r requirements.txt
+
+pandas==3.0.6           # read_csv of train.csv / test.csv
+numpy==2.5.4            # what scikit-learn sits on; same pin as the EDA folder
+scikit-learn==1.9.1     # DecisionTreeRegressor (Step 3); random_state=1 reproducibility
+
+# notebook execution toolchain: `jupyter nbconvert --to notebook --execute`
+# (plus the plain `jupyter` CLI) is run by hand — nbconvert pulls nbclient
+# and jupyter-core, ipykernel is the kernel they spawn:
+nbconvert==7.17.2
+ipykernel==7.4.0
