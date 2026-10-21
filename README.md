@@ -19,7 +19,7 @@ insights.
 ├── data/
 │   └── train-data-pseudonymised.csv      (1,460 rows × 81 columns, ~450 KB)
 ├── notebooks/
-│   └── notebook-model.ipynb              ← open in Jupyter; Restart Kernel → Run All
+│   └── notebook-model-full.ipynb              ← open in Jupyter; Restart Kernel → Run All
 ```
 
 ## Recreate the environment
